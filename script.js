@@ -2,14 +2,20 @@ let input = document.querySelectorAll(".input");
 let button = document.querySelector(".summ");
 let coin = [0.1, 0.2, 0.5, 1, 2, 5, 10, 20];
 
-console.log(input.length);
 
 let summarise = () => {
+  let sum = [];
   for (let i = 0; i <= input.length - 1; i++) {
-    let sum = (input[i].value * coin[i]).toFixed(2);
-    console.log(sum);
-    
+    sum.push((input[i].value * coin[i]).toFixed(2));
+   
   }
+  
+  console.log(typeof sum[0]);
+ let result = sum.reduce(function(sumу, elem) {
+	return Number(sumу + elem);
+}, 0);
+console.log(typeof result);
+console.log(result);
 };
 
 
