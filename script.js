@@ -12,10 +12,9 @@ let summarise = () => {
   
   console.log(typeof sum[0]);
  let result = sum.reduce(function(sumу, elem) {
-	return Number(sumу + elem);
+	return Number(sumу) + Number(elem);
 }, 0);
 console.log(typeof result);
 console.log(result);
+alert('Денег в кассе: ' + result + 'BYN')
 };
-
-
