@@ -4,7 +4,7 @@ let coin = [0.1, 0.2, 0.5, 1, 2, 5, 10, 20];
 
 showTipAmount = (value) => {
   //находим это окно
-  let a = document.getElementById('tip-coins');
+  let a = document.getElementById("tip-coins");
   //меняем у него класс
   a.className = "show";
   a.textContent = "Денег в кассе " + value + "BYN";
@@ -25,5 +25,5 @@ let summarise = () => {
     return Number(sumу) + Number(elem);
   }, 0);
   // alert("Денег в кассе: " + result + "BYN");
-  showTipAmount(result)
+  showTipAmount(result);
 };

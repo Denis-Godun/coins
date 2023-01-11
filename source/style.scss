@@ -4,10 +4,11 @@
 }
 body {
   min-height: 100vh;
-  background-image: linear-gradient(to bottom,
-      rgb(255, 95, 204),
-      rgb(255, 255, 0)
-    );
+  background-image: linear-gradient(
+    to bottom,
+    rgb(255, 95, 204),
+    rgb(255, 255, 0)
+  );
 }
 .coins {
   display: flex;
@@ -30,7 +31,7 @@ body {
 .main-title {
   text-align: center;
   color: rgb(229, 225, 0);
-  margin-bottom: 150px;
+  margin-bottom: 60px;
 }
 .block-title {
   text-align: center;
@@ -50,7 +51,7 @@ input {
   color: rgb(239, 5, 145);
 }
 .button {
-  margin-top: 50px;
+  margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
   width: 150px;
@@ -68,46 +69,46 @@ input::-webkit-inner-spin-button {
   background: #0a377e;
   margin: 0;
 }
-input[type='number'] {
-    -moz-appearance: textfield;
+input[type="number"] {
+  -moz-appearance: textfield;
 }
-#tip-coins{
-    visibility: hidden;
-    min-width: 250px;
-    margin: auto;
-    background: rgba(0, 0, 211, 0.9);
-    color: rgb(239, 5, 145);
-    bottom: 50px;
-    text-align: center;
-    padding: 16px;
-    position: fixed;
-    z-index: 1;
-    margin-top: 50%;
-    margin-left: 50%;
-            transform: translate(-50%, -50%);
-  }
+#tip-coins {
+  visibility: hidden;
+  min-width: 250px;
+  margin: auto;
+  background: rgba(0, 0, 211, 0.9);
+  color: rgb(239, 5, 145);
+  bottom: 50px;
+  text-align: center;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  margin-top: 50%;
+  margin-left: 50%;
+  transform: translate(-50%, -50%);
+}
 
-  #tip-coins.show {
-    visibility: visible;
-            animation: fadein 0.5s, fadeout 0.5s 4.5s;
+#tip-coins.show {
+  visibility: visible;
+  animation: fadein 0.5s, fadeout 0.5s 4.6s;
+}
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
   }
-  @keyframes fadein {
-    from {
-      bottom: 0;
-      opacity: 0;
-    }
-    to {
-      bottom: 50px;
-      opacity: 1;
-    }
+  to {
+    bottom: 50px;
+    opacity: 1;
   }
-  @keyframes fadeout {
-    from {
-      bottom: 30px;
-      opacity: 1;
-    }
-    to {
-      bottom: 0;
-      opacity: 0;
-    }
+}
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
   }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
