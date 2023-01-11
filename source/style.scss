@@ -4,7 +4,7 @@
 }
 body {
   min-height: 100vh;
-  background-image: linear-gradient(
+  background-image: linear-gradient(to bottom,
       rgb(255, 95, 204),
       rgb(255, 255, 0)
     ),
@@ -78,7 +78,7 @@ input[type='number'] {
     min-width: 250px;
     margin: auto;
     background: rgba(0, 0, 211, 0.9);
-    color: black;
+    color: rgb(239, 5, 145);
     bottom: 50px;
     text-align: center;
     padding: 16px;
