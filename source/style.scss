@@ -68,7 +68,9 @@ input {
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
-  -moz-appearance: none;
   background: #0a377e;
   margin: 0;
+}
+input[type='number'] {
+    -moz-appearance: textfield;
 }
