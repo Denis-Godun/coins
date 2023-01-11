@@ -11,6 +11,7 @@ showTipAmount = (value) => {
   //создаём функцию setTimeout, которая убирает класс спустя 3сек после его добавления
   setTimeout(function () {
     a.className = a.className.replace("show", "");
+    a.textContent = "";
   }, 5000);
 };
 
