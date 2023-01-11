@@ -5,8 +5,8 @@
 
 body {
   min-height: 100vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 255, 0.5)), to(rgba(255, 255, 0, 0.5))), url("../img/pixelcoin.png");
-  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5) 100%), url("../img/pixelcoin.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 95, 204)), to(rgb(255, 255, 0))), url("../img/pixelcoin.png");
+  background-image: linear-gradient(rgb(255, 95, 204), rgb(255, 255, 0)), url("../img/pixelcoin.png");
   background-size: 100px;
 }
 
